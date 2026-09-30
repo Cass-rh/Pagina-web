@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maxsercomp | Impresiones, copias y más</title>
+<meta name="description" content="Impresiones, fotocopias, planos, tarjetas, banners y sublimación. Entregas rápidas.">
+<style>
+:root{
+  --papel:#fbfaf6; --tinta:#1b1f3b; --c:#00a3d9; --m:#e5308a; --y:#ffd400; --gris:#5b607a; --linea:#dcdad0;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:"Trebuchet MS","Segoe UI",sans-serif;background:var(--papel);color:var(--tinta);line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{border-bottom:2px solid var(--tinta);background:var(--papel);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.3rem;text-decoration:none;display:flex;align-items:center;gap:10px}
+.dots{display:flex}
+.dots i{width:14px;height:14px;border-radius:50%;display:block;mix-blend-mode:multiply}
+.dots i:nth-child(1){background:var(--c)}
+.dots i:nth-child(2){background:var(--m);margin-left:-5px}
+.dots i:nth-child(3){background:var(--y);margin-left:-5px}
+nav a{text-decoration:none;margin-left:18px;font-weight:600}
+nav a:hover{text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--m)}
+.hero{padding:70px 0 60px}
+h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.05;max-width:14ch;letter-spacing:-.02em}
+.hero p{max-width:52ch;margin:20px 0 28px;color:var(--gris);font-size:1.1rem}
+.btn{display:inline-block;padding:13px 24px;background:var(--tinta);color:#fff;text-decoration:none;font-weight:700;border-radius:4px;border:2px solid var(--tinta)}
+.btn:hover{background:var(--m);border-color:var(--m)}
+.btn.alt{background:transparent;color:var(--tinta);margin-left:8px}
+.btn.alt:hover{background:var(--y);border-color:var(--tinta);color:var(--tinta)}
+section{padding:50px 0}
+h2{font-size:1.8rem;margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0;border:2px solid var(--tinta)}
+.item{padding:22px;border:1px solid var(--linea);background:#fff}
+.item h3{font-size:1.1rem;margin-bottom:6px}
+.item p{color:var(--gris);font-size:.95rem}
+.item:nth-child(3n+1){border-top:5px solid var(--c)}
+.item:nth-child(3n+2){border-top:5px solid var(--m)}
+.item:nth-child(3n){border-top:5px solid var(--y)}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px}
+.info h3{margin-bottom:6px}
+footer{background:var(--tinta);color:#fff;padding:26px 0;font-size:.9rem;margin-top:30px}
+:focus-visible{outline:3px solid var(--m);outline-offset:3px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio"><span class="dots"><i></i><i></i><i></i></span>Punto Impreso</a>
+    <nav><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="wrap hero">
+    <h1>Lo que necesitas, impreso hoy.</h1>
+    <p>Copias, impresiones a color, planos, tarjetas, banners y más. Envíanos tu archivo por WhatsApp y te avisamos cuando esté listo.</p>
+    <a class="btn" href="https://wa.me/18090000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    <a class="btn alt" href="#servicios">Ver servicios</a>
+  </div>
+
+  <section id="servicios">
+    <div class="wrap">
+      <h2>Servicios</h2>
+      <div class="grid">
+        <div class="item"><h3>Fotocopias e impresión</h3><p>Blanco y negro o a color, en cualquier cantidad.</p></div>
+        <div class="item"><h3>Planos y láminas</h3><p>Impresión en formatos grandes para proyectos.</p></div>
+        <div class="item"><h3>Tarjetas y volantes</h3><p>Diseños listos para promocionar tu negocio.</p></div>
+        <div class="item"><h3>Banners y lonas</h3><p>Publicidad resistente para interior y exterior.</p></div>
+        <div class="item"><h3>Sublimación</h3><p>Tazas, camisetas y regalos personalizados.</p></div>
+        <div class="item"><h3>Encuadernación</h3><p>Anillado y empastado de tesis y documentos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <div class="info">
+        <div><h3>Dirección</h3><p>Calle Principal #123<br>Tu ciudad, República Dominicana</p></div>
+        <div><h3>Horario</h3><p>Lunes a viernes: 8:00 a. m. – 6:00 p. m.<br>Sábados: 8:00 a. m. – 1:00 p. m.</p></div>
+        <div><h3>Teléfono y correo</h3><p>809-000-0000<br>hola@maxsercomp.com</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Maxsercomp. Todos los derechos reservados.</div>
+</footer>
+</body>
+</html>
